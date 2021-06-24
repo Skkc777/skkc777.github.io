@@ -17,12 +17,15 @@
   "homepage": "https://github.com/Skkc777/skkc777.github.io#readme",
   "description": "",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cli": "^2.3.0",
     "gulp-sass": "^4.1.0",
     "node-sass": "^6.0.0"
   },
   "dependencies": {
-    "browser-sync": "^2.26.14",
-    "debug": "^2.6.9"
+    "debug": "^2.6.9",
+    "gulp-clean-css": "^4.3.0"
   }
 }
