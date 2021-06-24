@@ -1,0 +1,659 @@
+html,
+body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
+}
+
+.main_section_bg {
+    background: url('../images/background/bg_first.jpg') center center/cover no-repeat;
+    min-height: 799px;
+
+
+}
+
+header {
+    position: relative;
+    height: 50px;
+}
+
+nav {
+    position: fixed;
+    width: 99.8%;
+    z-index: 50;
+    height: 50px;
+    background-color: #212121;
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 70px;
+        margin: 0;
+        list-style-type: none;
+        z-index: 50;
+
+
+
+        .menu_link {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 300;
+            text-decoration: none;
+
+            &:hover {
+
+                color: #1eacc7;
+                text-decoration: #1eacc7 underline;
+            }
+
+            .menu_item {
+                border-right: 2px dotted whitesmoke;
+                padding-right: 35px;
+            }
+        }
+
+        .menu .menu_item:last-child {
+            border: none;
+        }
+    }
+}
+
+.subheader {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 84px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #ffffff;
+
+    .xs-visible {
+        display: none;
+    }
+}
+
+/* Здесь задаем максимальную ширину от колонки, чтоб картинка
+ всегда растягивалась на всю ширину тех колонок, которые занимает */
+.subheader .subheader_logo {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_text_off {
+    opacity: 0.5;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.subheader .subheader_call {
+    display: block;
+    margin-top: 19px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: center;
+
+}
+
+.subheader .subheader_numphone {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.subheader .subheader_btn {
+    display: block;
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: 3px solid rgba(0, 0, 0, 0.07);
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    border-radius: 5px;
+    @include hover_btn
+}
+
+.subheader .subheader_btn a {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.promo .header_promo,
+.promo .subheader_promo {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.promo .header_promo {
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 134px;
+}
+
+.promo .subheader_promo {
+    margin-bottom: 0;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 14px;
+}
+
+.promo .promo_descr {
+    margin-top: 23px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 118px;
+    /* Style for "Rounded Re" */
+    width: 259px;
+    height: 63px;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    border: 3px solid rgba(0, 0, 0, 0.07);
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    border-radius: 5px;
+    /* текст */
+    color: #ffffff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    @include hover_btn
+}
+
+/* вторая секция  */
+.reasons {
+
+    min-height: 700px;
+    padding-top: 50px;
+    background: url(../images/background/bg2_sec3.png) center center/cover no-repeat;
+
+    .reasons_8blck {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+
+        .round_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 113px;
+            height: 113px;
+            margin-right: 26px;
+            border-radius: 100%;
+            background-color: #1eacc7;
+        }
+
+        .reason_text {
+            width: 343px;
+
+            .reason_title {
+                color: #1eacc7;
+                font-size: 17px;
+                font-weight: 400;
+            }
+
+            .reason_subtitle {
+                color: #202020;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 21px;
+            }
+        }
+    }
+}
+
+/* кнопка преимущества  */
+.reasons .reason_btn,
+.capability_btn,
+.univ_btn_sec {
+    display: block;
+    margin: 0 auto;
+    width: 112px;
+    height: 34px;
+    background-color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+
+.reasons_8,
+.univ_css_text {
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 38px;
+}
+
+
+
+.univ_css_subtext {
+    text-align: center;
+    margin-top: 19px;
+    color: #222222;
+    font-size: 17px;
+    font-weight: 400
+}
+
+.capabilities {
+    background: url('../images/background/bg2_sec3.png') center center/cover no-repeat;
+    min-height: 845px;
+    padding-top: 48px 0 79px 0;
+
+    .container {
+        padding-top: 113px;
+
+
+        .cbt_blk_1 {
+            background: url('../images/img/img1_sec3.png') center center/cover no-repeat;
+        }
+
+        .cbt_blk_2 {
+            background: url('../images/img/img2_sec3.png') center center/cover no-repeat;
+        }
+
+        .cbt_blk_3 {
+            background: url('../images/img/img3_sec3.png') center center/cover no-repeat;
+        }
+
+        .cbt_blk_4 {
+            background: url('../images/img/img4_sec3.png') center center/cover no-repeat;
+        }
+
+        .cbt_blk_5 {
+            background: url('../images/img/img5_sec3.png') center center/cover no-repeat;
+        }
+
+        .cbt_blk_6 {
+            background: url('../images/img/img6_sec3.png') center center/cover no-repeat;
+        }
+
+        .cbt_blk_4,
+        .cbt_blk_5,
+        .cbt_blk_6 {
+            margin-bottom: 80px;
+        }
+    }
+
+    .capability_block {
+        width: 320px;
+        height: 280px;
+        opacity: 0.9;
+        border: #1eacc7 solid 1px;
+        margin-top: 32px;
+        position: relative;
+
+        .cap_text {
+
+            margin-top: 50px;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        // созданный знак плюс для всех 
+        .cap_plus {
+            cursor: pointer;
+            width: 26px;
+            height: 26px;
+            background-color: #000000;
+            position: absolute;
+            top: 219px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 100%;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                background: #1eacc7;
+            }
+
+            /* the vertical line */
+            &:before {
+                left: 50%;
+                top: 4px;
+                /* this defines how much black "border" there should be */
+                bottom: 4px;
+                width: 2px;
+                transform: translateX(-50%);
+            }
+
+            /* the horizontal line */
+            &:after {
+                top: 50%;
+                left: 4px;
+                right: 4px;
+                height: 2px;
+                transform: translateY(-50%);
+            }
+
+            &:hover {
+
+                &::before,
+                &::after {
+                    background-color: $second_color;
+                    transition: .3s;
+                }
+            }
+        }
+
+        // конец знака плюс
+    }
+}
+
+// section purpose_car 
+.purpose_car {
+    min-height: 895px;
+    position: relative;
+    padding: 65px 0 138px 0;
+    z-index: 10;
+    background: url(../images/background/bg2_sec3.png) center center/cover no-repeat;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        height: 499px;
+        width: 100%;
+        background-color: #070716;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .purpose_btn {
+        background-color: #ffffff;
+        color: #070716;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .univ_css_text,
+    .univ_css_subtext {
+        color: #ffffff;
+    }
+
+    .car_image {
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 56px;
+
+    }
+
+    .car_text {
+        text-align: center;
+        color: #222222;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+}
+
+.conditions {
+    min-height: 850px;
+    padding: 20px 0 20px 0;
+
+    .cond_numb {
+        li {
+            font-size: 17px;
+            font-weight: 300;
+        }
+    }
+
+    // first table with blue items
+    .cond_text {
+        margin-top: 33px;
+
+        span {
+            color: $main_color;
+        }
+
+        .cond_numb {
+            list-style-image: url('../images/icons/ok_blue.png');
+            padding-left: 50px;
+        }
+    }
+
+    // second table with red items
+    .cond_text_red {
+        margin: 60px 0 0 0;
+
+        span {
+            color: $second_color;
+        }
+
+        .cond_numb {
+            list-style-image: url('../images/icons/ok_red.png');
+            padding-left: 50px;
+        }
+    }
+
+}
+
+
+// секция world_include 
+.world_include {
+    min-height: 717px;
+    background: url('../images/background/bg_sec6.jpg') center center/cover no-repeat;
+    padding-top: 49px;
+
+    .city_btn {
+        display: block;
+        margin: 0 auto;
+        width: 112px;
+        height: 34px;
+        background-color: #ffffff;
+        color: #070716;
+        font-size: 11px;
+        font-weight: 400;
+        text-align: center;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+
+    .container {
+        .univ_css_text {
+            color: #ffffff;
+            font-size: 38px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .univ_css_subtext {
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 21px;
+        }
+    }
+
+    .city_watch {
+
+        .a_city_watch {
+            display: block;
+            margin-top: 486px;
+            color: #1fbad6;
+            font-size: 15px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.footer {
+    padding: 14px 23px 39px 23px;
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .footer_line {
+        width: 299px;
+        height: 4px;
+        background-color: #1fbad6;
+        margin: 0 auto;
+    }
+
+    .footer_all {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 32px;
+
+        &>div {
+            width: 33%;
+
+            &:nth-child(3) {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        .footer_social {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            &_item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 9px;
+                width: 32px;
+                height: 32px;
+                background-color: #070716;
+                border-radius: 100%;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                &:nth-child(1) {
+                    margin-left: 0;
+                }
+            }
+
+            span {
+                color: #fff;
+
+                &:hover {
+                    color: violet;
+                }
+            }
+        }
+
+        .footer_links {
+
+            .footer_menu_top {
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    color: #070716;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+            }
+
+            .footer_menu_bottom {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 15px;
+
+                a {
+                    color: #999999;
+                    font-size: 11px;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+            }
+
+            &>a {
+                display: block;
+                margin: 0 auto;
+                margin-top: 19px;
+                text-align: center;
+                color: #1fbad6;
+                font-size: 11px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+
+        .mobile_links {
+            display: flex;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                img {
+                    display: block;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

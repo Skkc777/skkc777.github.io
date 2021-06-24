@@ -7,7 +7,7 @@ const sass        = require('gulp-sass');
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: "SKKC777.GITHUB.IO",
+            baseDir: ".",
             index: "index.html"
         }
     });
